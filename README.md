@@ -2,6 +2,8 @@
 
 The Material Design Lite theme for [Ghost](http://github.com/tryghost/ghost/) used on [Development Laundry](https://devlaundry.com).
 
+*Currently a work in progress.*
+
 ## Table of contents
 
 * [Features](#features)
