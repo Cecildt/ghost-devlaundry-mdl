@@ -1,0 +1,41 @@
+body{
+    background-color: #f9f9f9;
+}
+.page-content{
+    margin: 15px;    
+}
+.share-buttons{
+    float: right;
+}
+.feature-card-wide.mdl-card {
+  width: 600px;
+  float: left;
+  margin-bottom: 15px;
+}
+.feature-card-wide > .mdl-card__title {
+  color: #fff;
+  height: 176px;
+}
+.feature-card-wide > .mdl-card__menu {
+  color: #fff;
+}
+
+.article-card-wide.mdl-card {
+  width: 48%;
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 15px;
+}
+.article-card-wide.mdl-card:nth-child(1){
+    width: 98%;
+}
+.article-card-wide > .mdl-card__title {
+  color: #fff;
+  height: 100px;
+}
+.article-card-wide > .mdl-card__menu {
+  color: #fff;
+}
+.article-card-wide a{
+    text-decoration: none;
+}

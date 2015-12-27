@@ -16,11 +16,10 @@
 
     {{! Styles'n'Scripts }}
     <!-- <link rel="stylesheet" type="text/css" href="{{asset "jspm_packages\github\google\material-design-lite@1.0.6\material.min.css"}}" /> -->
-    <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.blue-red.min.css">
-    <script src="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js"></script>
+    <link rel="stylesheet" href="./assets/css/devlaundry.css">
+    <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.blue-red.min.css">        
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     
-
     {{! Ghost outputs important style and meta data with this tag }}
     {{ghost_head}}
 </head>
@@ -47,9 +46,13 @@
             <span class="mdl-layout-title">{{@blog.title}}</span>
             <span>{{@blog.description}}</span>
             <nav class="mdl-navigation">
+                <ul>
                 {{#foreach navigation}}
-                    <a class="mdl-navigation__link" href="{{url absolute="true"}}">{{label}}</a>            
+                    <li role="presentation">
+                        <a class="mdl-navigation__link" href="{{url absolute="true"}}">{{label}}</a>    
+                    </li>                                
                 {{/foreach}}
+                </ul>
                 <a href="{{@blog.url}}/rss/">Subscribe</a>
             </nav>
         </div>
@@ -75,6 +78,7 @@
     {{! Ghost outputs important scripts and data with this tag }}
     {{ghost_foot}}
     
+    <script src="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js"></script>
     <script type="text/javascript" src="{{asset "js/jquery.fitvids.js"}}"></script>
     {{! The main JavaScript file for Casper }}
     <script type="text/javascript" src="{{asset "js/index.js"}}"></script>

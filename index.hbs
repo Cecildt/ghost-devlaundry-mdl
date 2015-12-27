@@ -1,4 +1,10 @@
 {{!< default}}
-{{! The tag above means - insert everything in this file into the {body} of the default.hbs template }}
-{{! The tag below includes the post loop - partials/loop.hbs }}
-{{> "loop"}}
+<div class="mdl-grid">
+    <div class="mdl-cell mdl-cell--8-col">
+        {{> "loop"}}
+    </div>
+    <div class="mdl-cell mdl-cell--4-col mdl-cell--hide-phone">
+        <h3>Tags</h3>
+        {{#get "tags" limit="all"}}{{tags}}{{/get}}
+    </div>
+</div>
