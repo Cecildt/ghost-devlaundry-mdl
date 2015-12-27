@@ -39,3 +39,8 @@ body{
 .article-card-wide a{
     text-decoration: none;
 }
+.sidebar-logo{
+    display: block;
+    border-radius: 100%;
+    margin-left: 40px;
+}

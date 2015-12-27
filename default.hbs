@@ -15,7 +15,6 @@
     <link rel="shortcut icon" href="{{asset "favicon.ico"}}">
 
     {{! Styles'n'Scripts }}
-    <!-- <link rel="stylesheet" type="text/css" href="{{asset "jspm_packages\github\google\material-design-lite@1.0.6\material.min.css"}}" /> -->
     <link rel="stylesheet" href="./assets/css/devlaundry.css">
     <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.blue-red.min.css">        
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -42,9 +41,11 @@
             </div>
             </div>
         </header>
-        <div class="mdl-layout__drawer">
-            <span class="mdl-layout-title">{{@blog.title}}</span>
-            <span>{{@blog.description}}</span>
+        <div class="mdl-layout__drawer">            
+            <span class="mdl-layout-title">{{@blog.title}}</span>           
+            <img class="sidebar-logo" width="128" height="128" src="http://cdn.devlaundry.com/images/site/avatar-small.png" alt="Development Laundry Logo">
+            <strong class="mdl-layout-title">Cecil du Toit</strong>            
+            <span style="margin-left:20px;">{{@blog.description}}</span>
             <nav class="mdl-navigation">
                 <ul>
                 {{#foreach navigation}}
@@ -53,7 +54,7 @@
                     </li>                                
                 {{/foreach}}
                 </ul>
-                <a href="{{@blog.url}}/rss/">Subscribe</a>
+                <a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" style="margin: 15px;" href="{{@blog.url}}/rss/">Subscribe</a>
             </nav>
         </div>
         <main class="mdl-layout__content">
@@ -67,12 +68,6 @@
         </footer>
     </div>
 
-    <script src="{{asset "jspm_packages/system.js"}}"></script>
-    <script src="{{asset "config.js"}}"></script>
-    <script>
-        System.import('lib/main.js');
-    </script>    
-
     {{!-- jQuery needs to come before `{{ghost_foot}}` so that jQuery can be used in code injection --}}
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     {{! Ghost outputs important scripts and data with this tag }}
@@ -80,7 +75,6 @@
     
     <script src="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js"></script>
     <script type="text/javascript" src="{{asset "js/jquery.fitvids.js"}}"></script>
-    {{! The main JavaScript file for Casper }}
     <script type="text/javascript" src="{{asset "js/index.js"}}"></script>
 
 </body>

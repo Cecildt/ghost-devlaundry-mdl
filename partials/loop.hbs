@@ -13,10 +13,17 @@
       Read Now
     </a>
     <div class="share-buttons">
-    <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
-      <i class="material-icons">share</i>
-    </button>
-  </div>
+        <button id="{{slug}}-share-menu" class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+            <i class="material-icons">share</i>
+        </button>
+        <ul class="mdl-menu mdl-menu--top-right mdl-js-menu mdl-js-ripple-effect"
+            for="{{slug}}-share-menu">
+            <li class="mdl-menu__item">Twitter</li>
+            <li class="mdl-menu__item">Linkedin</li>
+            <li class="mdl-menu__item">Facebook</li>
+            <li class="mdl-menu__item">Reddit</li>
+        </ul>
+    </div>
   </div>
 </div>
 
