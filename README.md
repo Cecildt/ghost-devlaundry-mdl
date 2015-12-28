@@ -18,7 +18,7 @@ The Material Design Lite theme for [Ghost](http://github.com/tryghost/ghost/) us
 * Responsive Videos with [Fitvids](http://fitvidsjs.com/)
 * [Material Design Lite](http://www.getmdl.io/)
 * [Material Design Icons](https://materialdesignicons.com/)
-* [ReadingTime](https://raw.github.com/michael-lynch/reading-time)
+* [ReadingTime](https://github.com/michael-lynch/reading-time)
 * Google Universal Analytics snippet
 * OpenGraph and Twitter Cards meta's
 * One-file CSS/JS for performance

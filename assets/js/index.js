@@ -1,8 +1,4 @@
-/**
- * Main JS file for Casper behaviours
- */
-
-/* globals jQuery, document, hljs */
+/* globals jQuery, document */
 (function ($, undefined) {
     "use strict";
 
@@ -14,14 +10,25 @@
 
         $(".scroll-down").arctic_scroll();
         
-        $("#toc-tag").toc({
-            selector: "h1,h2,h3",
-            container: ".post-content"
-        });
+        if($.isFunction($.fn.toc)){
+            $("#toc-tag").toc({
+                selector: "h1,h2,h3",
+                container: ".post-content"
+            });
+        }
         
         if($.isFunction($.fn.ghostRelated)){
             $('.related-posts').ghostRelated();    
-        } 
+        }
+        
+        if($.isFunction($.fn.readingTime)){
+            $('.post-content').readingTime({
+                wordCountTarget: $(this).find('.word-count'),
+                prependTimeString: "Reading Time: ",
+                prependWordString: "Word Count: "
+            });
+        }
+         
     });
 
     // Arctic Scroll by Paul Adam Davis
