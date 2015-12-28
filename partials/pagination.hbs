@@ -1,0 +1,13 @@
+<nav class="pagination" role="navigation">
+    {{#if prev}}
+        <a class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored" href="{{page_url prev}}">
+            <i class="mdi mdi-arrow-left mdi-36px icon-fab-align"></i>
+        </a>
+    {{/if}}
+    <span class="page-number">Page {{page}} of {{pages}}</span>
+    {{#if next}}
+        <a class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored"" href="{{page_url next}}">
+            <i class="mdi mdi-arrow-right mdi-36px icon-fab-align"></i>
+        </a>
+    {{/if}}
+</nav>

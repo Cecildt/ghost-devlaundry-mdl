@@ -15,8 +15,9 @@
     <link rel="shortcut icon" href="{{asset "favicon.ico"}}">
 
     {{! Styles'n'Scripts }}
-    <link rel="stylesheet" href="./assets/css/devlaundry.css">
-    <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.blue-red.min.css">        
+    <link rel="stylesheet" href="/assets/css/devlaundry.css">
+    <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.blue-red.min.css">            
+    <link href="/assets/css/materialdesignicons.min.css" media="all" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     
     {{! Ghost outputs important style and meta data with this tag }}
@@ -27,35 +28,42 @@
             mdl-layout--fixed-header">
         <header class="mdl-layout__header">
             <div class="mdl-layout__header-row">
+            <a href="/" class="mdl-button mdl-js-button mdl-button--icon">
+                <i class="mdi mdi-home mdi-24px mdi-light"></i>
+            </a>
             <div class="mdl-layout-spacer"></div>
             <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable
                         mdl-textfield--floating-label mdl-textfield--align-right">
                 <label class="mdl-button mdl-js-button mdl-button--icon"
                     for="fixed-header-drawer-exp">
-                <i class="material-icons">search</i>
+                <i class="mdi mdi-magnify"></i>
                 </label>
                 <div class="mdl-textfield__expandable-holder">
-                <input class="mdl-textfield__input" type="text" name="sample"
+                <input class="mdl-textfield__input" type="text" name="search"
                         id="fixed-header-drawer-exp">
                 </div>
             </div>
             </div>
         </header>
-        <div class="mdl-layout__drawer">            
+        <div class="mdl-layout__drawer">                        
             <span class="mdl-layout-title">{{@blog.title}}</span>           
-            <img class="sidebar-logo" width="128" height="128" src="http://cdn.devlaundry.com/images/site/avatar-small.png" alt="Development Laundry Logo">
-            <strong class="mdl-layout-title">Cecil du Toit</strong>            
+            <img class="sidebar-logo" width="128" height="128" src="https://cdn.devlaundry.com/images/site/avatar-small.png" alt="Development Laundry Logo">
+            <strong class="mdl-layout-title">Cecil du Toit</strong>              
+               
+            <section style="margin-left:40px;">
+                <h6>Follow Me</h6>
+                <a href="https://twitter.com/cecildt" target="_blank" class="mdl-button mdl-js-button mdl-button--icon">
+                    <i class="mdi mdi-twitter-box"></i>
+                </a>
+                <a href="https://github.com/Cecildt" target="_blank" class="mdl-button mdl-js-button mdl-button--icon">
+                    <i class="mdi mdi-github-box"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/cecildutoit" target="_blank" class="mdl-button mdl-js-button mdl-button--icon">
+                    <i class="mdi mdi-linkedin-box"></i>
+                </a>
+            </section>                      
+            {{navigation}}
             <span style="margin-left:20px;">{{@blog.description}}</span>
-            <nav class="mdl-navigation">
-                <ul>
-                {{#foreach navigation}}
-                    <li role="presentation">
-                        <a class="mdl-navigation__link" href="{{url absolute="true"}}">{{label}}</a>    
-                    </li>                                
-                {{/foreach}}
-                </ul>
-                <a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" style="margin: 15px;" href="{{@blog.url}}/rss/">Subscribe</a>
-            </nav>
         </div>
         <main class="mdl-layout__content">
             <div class="page-content">

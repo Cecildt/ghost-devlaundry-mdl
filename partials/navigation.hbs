@@ -1,13 +1,6 @@
-<div class="nav">
-    <h3 class="nav-title">Menu</h3>
-    <a href="#" class="nav-close">
-        <span class="hidden">Close</span>
-    </a>
-    <ul>
-        {{#foreach navigation}}
-            <li class="nav-{{slug}}{{#if current}} nav-current{{/if}}" role="presentation"><a href="{{url absolute="true"}}">{{label}}</a></li>
-        {{/foreach}}
-    </ul>
-    <a class="subscribe-button icon-feed" href="{{@blog.url}}/rss/">Subscribe</a>
-</div>
-<span class="nav-cover"></span>
+<nav class="mdl-navigation" role="navigation">
+    {{#foreach navigation}}
+            <a class="mdl-navigation__link" href="{{url absolute="true"}}">{{label}}</a>                    
+    {{/foreach}}
+    <a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" style="margin: 15px;" href="{{@blog.url}}/rss/">Subscribe</a>
+</nav>

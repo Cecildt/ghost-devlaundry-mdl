@@ -1,10 +1,10 @@
 {{!< default}}
 <div class="mdl-grid">
     <div class="mdl-cell mdl-cell--8-col">
-        {{> "loop"}}
+        {{> featured}}
+        {{> loop}}
     </div>
     <div class="mdl-cell mdl-cell--4-col mdl-cell--hide-phone">
-        <h3>Tags</h3>
-        {{#get "tags" limit="all"}}{{tags}}{{/get}}
+        {{> sidebar}}
     </div>
 </div>
