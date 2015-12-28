@@ -170,3 +170,7 @@ div.mdl-card__title h4 span{
 .share-top-article a{
     text-decoration: none;
 }
+ul.related-posts{
+    list-style: none;
+    padding: 0;
+}

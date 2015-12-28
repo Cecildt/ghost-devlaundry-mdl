@@ -21,11 +21,14 @@
             var items = $tocTag.find("li");
             $.map(items, function(el){
                 $(el).prepend('<i class="mdi mdi-bookmark-outline mdi-18px"></i>');
+                $(el).find('a').addClass("mdl-button mdl-js-button mdl-button--accent");
             });
         }
         
         if($.isFunction($.fn.ghostRelated)){
-            $('.related-posts').ghostRelated();    
+            $('.related-posts').ghostRelated({
+                template: '<li><a href="{url}" class="mdl-button mdl-js-button mdl-button--accent">{title}</a></li>'
+            });    
         }
         
         if($.isFunction($.fn.readingTime)){
