@@ -13,10 +13,11 @@ The Material Design Lite theme for [Ghost](http://github.com/tryghost/ghost/) us
 
 ## Features
 
-* Disqus comments
+* [Moot comments](https://muut.com/)
 * Syntax Highlight with [Prism](http://prismjs.com/)
 * Responsive Videos with [Fitvids](http://fitvidsjs.com/)
-* Icons [Fontawesome](http://fortawesome.github.io/Font-Awesome/)
+* [Material Design Lite](http://www.getmdl.io/)
+* [Material Design Icons](https://materialdesignicons.com/)
 * [ReadingTime](https://raw.github.com/michael-lynch/reading-time)
 * Google Universal Analytics snippet
 * OpenGraph and Twitter Cards meta's
