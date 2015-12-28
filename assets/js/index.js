@@ -11,9 +11,16 @@
         $(".scroll-down").arctic_scroll();
         
         if($.isFunction($.fn.toc)){
-            $("#toc-tag").toc({
+            var $tocTag = $("#toc-tag");
+            $tocTag.toc({
                 selector: "h1,h2,h3",
-                container: ".post-content"
+                container: ".post-content",
+                highlightOnScroll: true
+            });
+            
+            var items = $tocTag.find("li");
+            $.map(items, function(el){
+                $(el).prepend('<i class="mdi mdi-bookmark-outline mdi-18px"></i>');
             });
         }
         

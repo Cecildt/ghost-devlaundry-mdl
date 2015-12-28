@@ -1,4 +1,10 @@
 <section>
     <h6>Tags</h6>
-    {{#get "tags" limit="all"}}{{tags}}{{/get}}
+    {{#get "tags" limit="all"}}
+        {{#foreach tags}}
+            <a href="{{url}}" class="mdl-button mdl-js-button mdl-button--primary">
+                {{name}}
+            </a>
+        {{/foreach}}
+    {{/get}}
 </section>
