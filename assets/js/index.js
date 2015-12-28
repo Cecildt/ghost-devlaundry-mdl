@@ -9,8 +9,6 @@
     var $document = $(document);
 
     $document.ready(function () {
-        hljs.initHighlightingOnLoad();
-
         var $postContent = $(".post-content");
         $postContent.fitVids();
 
