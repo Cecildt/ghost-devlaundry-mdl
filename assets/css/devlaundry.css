@@ -65,3 +65,47 @@ body{
 .icon-fab-align{
     margin-top: 10px;
 }
+
+.product-links{
+    padding: 0;
+}
+.product-links a {
+    text-decoration: none;
+}
+.product-links li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.page-header{
+    text-align: center;
+}
+.share a{
+    text-decoration: none;
+}
+
+#toc-tag ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+#toc-tag a{
+    text-decoration: none;
+}
+#toc-tag .toc-h2 {
+    padding-left: 10px;
+}
+#toc-tag .toc-h3 {
+    padding-left: 20px;
+}
+#toc-tag .toc-active {
+    background: #BBDEFB;   
+    padding-left: 5px; 
+}
+#toc-tag li.toc-active a {
+    color: #fff;
+}
+/* Comments */
+.post-comment{
+    margin-top: 30px;
+}

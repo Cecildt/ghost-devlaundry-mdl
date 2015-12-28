@@ -2,18 +2,28 @@
  * Main JS file for Casper behaviours
  */
 
-/* globals jQuery, document */
+/* globals jQuery, document, hljs */
 (function ($, undefined) {
     "use strict";
 
     var $document = $(document);
 
     $document.ready(function () {
+        hljs.initHighlightingOnLoad();
 
         var $postContent = $(".post-content");
         $postContent.fitVids();
 
         $(".scroll-down").arctic_scroll();
+        
+        $("#toc-tag").toc({
+            selector: "h1,h2,h3",
+            container: ".post-content"
+        });
+        
+        if($.isFunction($.fn.ghostRelated)){
+            $('.related-posts').ghostRelated();    
+        } 
     });
 
     // Arctic Scroll by Paul Adam Davis
