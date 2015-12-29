@@ -16,12 +16,13 @@
 
     {{! Styles'n'Scripts }}
     
-    <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.blue-red.min.css" media="all" rel="stylesheet" type="text/css">            
-    <link href="{{asset "/css/materialdesignicons.min.css"}}" media="all" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="{{asset "css/devlaundry.css"}}" media="all" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.blue-red.min.css" media="all" rel="stylesheet" type="text/css">               
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" media="all" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" media="all" rel="stylesheet" type="text/css">
-    <link href="{{asset "css/prism.css"}}" rel="stylesheet" />
+    
+    <!-- inject:css -->
+    <link rel="stylesheet" href="/assets/dist/all.min.css">
+    <!-- endinject -->
     
     {{! Ghost outputs important style and meta data with this tag }}
     {{ghost_head}}
@@ -95,14 +96,10 @@
     
     <script src="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js" async></script>        
     <script type="text/javascript" src="https://cdn.muut.com/1/moot.min.js" async></script>
-    <script type="text/javascript" src="{{asset "js/prism.js"}}"></script>
     
-    <script type="text/javascript" src="{{asset "js/jquery.fitvids.js"}}"></script>
-    <script type="text/javascript" src="{{asset "js/jquery.toc.js"}}"></script>
-    <script type="text/javascript" src="{{asset "js/jquery.ghostrelated.js"}}"></script>    
-    <script type="text/javascript" src="{{asset "js/readingTime.min.js"}}"></script>
-    <script type="text/javascript" src="{{asset "js/jquery.ghostHunter.js"}}"></script>
-    <script type="text/javascript" src="{{asset "js/index.js"}}"></script>
+    <!-- inject:js -->
+    <script src="/assets/dist/all.min.js"></script>
+    <!-- endinject -->
 
 </body>
 </html>
