@@ -38,7 +38,20 @@
                 prependWordString: "Word Count: "
             });
         }
-         
+        
+        if($.isFunction($.fn.ghostHunter)){ 
+            var $searchField = $("#fixed-header-drawer-exp").ghostHunter({
+                results   : "#results",
+                onKeyUp   : true,
+                zeroResultsInfo : false,
+                info_template   : "<p>Number of articles found: {{amount}}</p>",
+                result_template : '<div class="search-card mdl-card mdl-shadow--4dp"><div class="mdl-card__title"><h3 class="mdl-card__title-text"><a href="{{link}}">{{title}}</a></h3></div><div class="mdl-card__supporting-text">{{description}}</div><div class="mdl-card__actions mdl-card--border"><a href="{{url}}" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">Read Now <i class="mdi mdi-arrow-right mdi-12px"></i></a></div></div>'
+            });
+            
+            $("#clearSearch").on("click", function(){
+                $searchField.clear();                
+            });
+        }
     });
 
     // Arctic Scroll by Paul Adam Davis

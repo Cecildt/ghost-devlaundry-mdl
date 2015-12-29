@@ -92,6 +92,24 @@ div.mdl-card__title h4 span{
     text-decoration: none;
 }
 
+.search-card.mdl-card {  
+  width: 250px;
+  margin-right: 10px;
+  margin-bottom: 15px;
+  overflow: visible;
+  float: left;
+}
+.search-card > .mdl-card__title {
+  color: #fff;
+  height: 100px;
+}
+.search-card > .mdl-card__menu {
+  color: #fff;
+}
+.search-card a{
+    text-decoration: none;
+}
+
 .sidebar-logo{
     display: block;
     border-radius: 100%;
@@ -182,4 +200,10 @@ ul.related-posts{
 }
 .button-icon-align{
     padding-top: 15px;
+}
+#results a{
+    text-decoration: none;
+}
+#clearSearch{
+    bottom: 0;
 }
