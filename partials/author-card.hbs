@@ -1,0 +1,33 @@
+{{! Everything inside the #author tags pulls data from the author }}
+<section class="author-card mdl-card mdl-shadow--4dp">
+    {{#author}}
+    <div class="mdl-card__title">    
+        {{#if image}}              
+            <img src="{{image}}" alt="{{name}}'s Picture" width="100" height="100" class="author-image">
+        {{/if}}  
+        <h4>
+            <span>Written by: </span><a href="{{url}}">{{name}}</a>
+        </h4>  
+    </div>
+    <div class="mdl-card__supporting-text">
+        {{#if bio}}
+            <i class="mdi mdi-bio mdi-24px"></i>
+            <p>{{bio}}</p>
+        {{else}}
+            <p>Read <a href="{{url}}">more posts</a> by this author.</p>
+        {{/if}}
+    </div>
+    <div class="mdl-card__actions mdl-card--border">
+        {{#if location}}
+            <i class="mdi mdi-map-marker mdi-24px"></i>
+            <span class="author-location">Based in {{location}}</span>
+        {{/if}}
+        {{#if website}}
+            <i class="mdi mdi-web mdi-24px"></i>
+            <span class="author-link">
+                Website: <a href="{{website}}">{{website}}</a>
+            </span>
+        {{/if}}
+    </div>
+    {{/author}}
+</section>
