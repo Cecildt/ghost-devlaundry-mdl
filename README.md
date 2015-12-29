@@ -2,15 +2,6 @@
 
 The Material Design Lite theme for [Ghost](http://github.com/tryghost/ghost/) used on [Development Laundry](https://devlaundry.com).
 
-*Currently a work in progress.*
-
-## Table of contents
-
-* [Features](#features)
-* [Installing](#installing)
-* [Configuring](#configuring)
-* [Contributing](#contributing)
-
 ## Features
 
 * [Moot comments](https://muut.com/)
@@ -25,6 +16,14 @@ The Material Design Lite theme for [Ghost](http://github.com/tryghost/ghost/) us
 
 ## Installing
 Download the latest release and install it as you install all other themes.
+
+
+## Gulp Tasks
+
+* gulp dev
+    * Inject development JS and CSS files in default.hbs file.
+* gulp prod
+    * Compress and combine JS and CSS files. Injects combined files in  default.hbs file.
 
 
 ## Contributing
