@@ -21,7 +21,9 @@
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" media="all" rel="stylesheet" type="text/css">
     
     <!-- inject:css -->
-    <link rel="stylesheet" href="/assets/dist/all.min.css">
+    <link rel="stylesheet" href="/assets/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="/assets/css/prism.css">
+    <link rel="stylesheet" href="/assets/css/devlaundry.css">
     <!-- endinject -->
     
     {{! Ghost outputs important style and meta data with this tag }}
@@ -53,8 +55,8 @@
             </div>
         </header>
         <div class="mdl-layout__drawer">                        
-            <span class="mdl-layout-title">{{@blog.title}}</span>           
-            <img class="sidebar-logo" width="128" height="128" src="https://cdn.devlaundry.com/images/site/avatar-small.png" alt="Development Laundry Logo">
+            <h5 class="sidebar-title">{{@blog.title}}</h5>           
+            <img class="sidebar-logo" width="128" height="128" src="{{@blog.logo}}" alt="Development Laundry Logo">
             <strong class="mdl-layout-title">Cecil du Toit</strong>              
                
             <section style="margin-left:40px;">
@@ -98,7 +100,13 @@
     <script type="text/javascript" src="https://cdn.muut.com/1/moot.min.js" async></script>
     
     <!-- inject:js -->
-    <script src="/assets/dist/all.min.js"></script>
+    <script src="/assets/js/prism.js"></script>
+    <script src="/assets/js/jquery.fitvids.js"></script>
+    <script src="/assets/js/jquery.ghostHunter.js"></script>
+    <script src="/assets/js/jquery.ghostrelated.js"></script>
+    <script src="/assets/js/jquery.toc.js"></script>
+    <script src="/assets/js/readingTime.min.js"></script>
+    <script src="/assets/js/index.js"></script>
     <!-- endinject -->
 
 </body>

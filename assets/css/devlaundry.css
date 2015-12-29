@@ -110,6 +110,10 @@ div.mdl-card__title h4 span{
     text-decoration: none;
 }
 
+.sidebar-title{
+    margin-left: 5px;
+    text-align: center;
+}
 .sidebar-logo{
     display: block;
     border-radius: 100%;

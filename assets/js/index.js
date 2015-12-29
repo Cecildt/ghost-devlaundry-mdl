@@ -27,7 +27,7 @@
         
         if($.isFunction($.fn.ghostRelated)){
             $('.related-posts').ghostRelated({
-                template: '<li><a href="{url}" class="mdl-button mdl-js-button mdl-button--accent">{title}</a></li>'
+                template: '<li><a href="{url}" class="mdl-button mdl-js-button mdl-button--accent"><i class="mdi mdi-heart-outline"></i>  {title}</a></li>'
             });    
         }
         

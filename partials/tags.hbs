@@ -3,7 +3,7 @@
     {{#get "tags" limit="all"}}
         {{#foreach tags}}
             <a href="{{url}}" class="mdl-button mdl-js-button mdl-button--accent">
-                {{name}}
+                <i class="mdi mdi-tag"></i>  {{name}}
             </a>
         {{/foreach}}
     {{/get}}
