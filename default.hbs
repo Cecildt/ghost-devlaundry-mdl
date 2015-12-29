@@ -15,18 +15,20 @@
     <link rel="shortcut icon" href="{{asset "favicon.ico"}}">
 
     {{! Styles'n'Scripts }}
-    <link rel="stylesheet" href="{{asset "css/devlaundry.css"}}">
-    <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.blue-red.min.css">            
+    
+    <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.blue-red.min.css" media="all" rel="stylesheet" type="text/css">            
     <link href="{{asset "/css/materialdesignicons.min.css"}}" media="all" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+    <link rel="stylesheet" href="{{asset "css/devlaundry.css"}}" media="all" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" media="all" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" media="all" rel="stylesheet" type="text/css">
     <link href="{{asset "css/prism.css"}}" rel="stylesheet" />
     
     {{! Ghost outputs important style and meta data with this tag }}
     {{ghost_head}}
 </head>
 <body>
-    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer
+    <div id="top"></div>
+    <div  class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer
             mdl-layout--fixed-header">
         <header class="mdl-layout__header">
             <div class="mdl-layout__header-row">
@@ -72,6 +74,9 @@
                 {{{body}}}
             </div>
         </main>
+        <a href="#top" title="Back to Top" class="go-top-button mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
+            <i class="mdi mdi-chevron-double-up button-icon-align"></i>
+        </a>
         <footer class="site-footer clearfix">
             <section class="copyright"><a href="{{@blog.url}}">{{@blog.title}}</a> &copy; {{date format="YYYY"}}</section>
             <section class="poweredby">Proudly published with <a href="https://ghost.org">Ghost</a></section>

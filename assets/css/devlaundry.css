@@ -174,3 +174,12 @@ ul.related-posts{
     list-style: none;
     padding: 0;
 }
+.go-top-button{
+    position: fixed!important;
+    right: 48px;
+    bottom: 49px;
+    z-index: 99;
+}
+.button-icon-align{
+    padding-top: 15px
+}
