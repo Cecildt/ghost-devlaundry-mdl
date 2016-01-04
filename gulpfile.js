@@ -37,6 +37,16 @@ gulp.task('inject-prod', function () {
     .pipe(gulp.dest('./'));
 });
 
+gulp.task('inject-cdn', function () {
+  // Not working yet.
+  var target = gulp.src('./default.hbs');
+  // It's not necessary to read the files (will speed up things), we're only after their paths: 
+  var sources = gulp.src(['https://cdn.devlaundry.com/assets/dist/all.min.js', 'https://cdn.devlaundry.com/assets/dist/all.min.css'], {read: false});
+ 
+  return target.pipe(inject(sources))
+    .pipe(gulp.dest('./'));
+});
+
 gulp.task('inject-dev', function () {
   var target = gulp.src('./default.hbs');
    
