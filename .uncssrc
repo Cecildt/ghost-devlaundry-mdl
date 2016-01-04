@@ -1,0 +1,10 @@
+{
+    "ignore": [
+        ".unused",
+        "/^#js/"
+    ],
+    "stylesheets": [
+        "http://storage.googleapis.com/code.getmdl.io/1.0.6/material.blue-red.min.css",
+        "http://192.168.99.100:32768/assets/dist/all.min.css"
+    ]
+}
