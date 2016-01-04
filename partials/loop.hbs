@@ -3,7 +3,6 @@
     <div class="mdl-cell mdl-cell--6-col">
         {{#foreach posts}}
             {{#if @odd}}
-                {{^if featured}}
                 <article class="article-card-wide mdl-card mdl-shadow--4dp">
                     <div class="mdl-card__title">    
                         <h2 class="mdl-card__title-text">
@@ -48,14 +47,12 @@
                         </div>
                     </div>
                 </article>
-                {{/if}}
             {{/if}}
         {{/foreach}}
     </div>
     <div class="mdl-cell mdl-cell--6-col">
         {{#foreach posts}}
             {{#if @even}}
-                {{^if featured}}
                 <article class="article-card-wide mdl-card mdl-shadow--4dp">
                     <div class="mdl-card__title">    
                         <h2 class="mdl-card__title-text">
@@ -100,7 +97,6 @@
                         </div>
                     </div>
                 </article>
-                {{/if}}
             {{/if}}
         {{/foreach}}
     </div>
