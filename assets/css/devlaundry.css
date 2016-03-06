@@ -1,16 +1,16 @@
 body{
     background-color: #f9f9f9;
 }
-article h1{
+h1{
     font-size: 28px;
 }
-article h2{
+h2{
     font-size: 24px;
 }
-article h3{
+h3{
     font-size: 20px;
 }
-article h4{
+h4{
     font-size: 18px;
 }
 .clear{
@@ -74,6 +74,7 @@ article h4{
 }
 .author-card > .mdl-card__title {
   color: #fff;
+  width: 70%;
 }
 .author-card > .mdl-card__menu {
   color: #fff;
