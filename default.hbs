@@ -20,6 +20,9 @@
     </style>
     
     <!-- inject:css -->
+    <link rel="stylesheet" href="/assets/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="/assets/css/prism.css">
+    <link rel="stylesheet" href="/assets/css/devlaundry.css">
     <!-- endinject -->
     
     {{! Ghost outputs important style and meta data with this tag }}
@@ -99,8 +102,8 @@
         var l3 = document.createElement('link'); l3.rel = 'stylesheet'; l3.href = '//fonts.googleapis.com/css?family=Roboto:300,400,500,700';
         h.parentNode.insertBefore(l3, h);
         
-        var l4 = document.createElement('link'); l4.rel = 'stylesheet'; l4.href = '/assets/dist/all.min.css';
-        h.parentNode.insertBefore(l4, h);
+        // var l4 = document.createElement('link'); l4.rel = 'stylesheet'; l4.href = '/assets/dist/all.min.css';
+        // h.parentNode.insertBefore(l4, h);
         
         }
         var raf = requestAnimationFrame || mozRequestAnimationFrame ||
@@ -118,7 +121,13 @@
     <script type="text/javascript" src="//cdn.muut.com/1/moot.min.js" async></script>
     
     <!-- inject:js -->
-    <script src="//cdn.devlaundry.com/assets/dist/all.min.js"></script>
+    <script src="/assets/js/prism.js"></script>
+    <script src="/assets/js/jquery.fitvids.js"></script>
+    <script src="/assets/js/jquery.ghostHunter.js"></script>
+    <script src="/assets/js/jquery.ghostrelated.js"></script>
+    <script src="/assets/js/jquery.toc.js"></script>
+    <script src="/assets/js/readingTime.min.js"></script>
+    <script src="/assets/js/index.js"></script>
     <!-- endinject -->
 
 </body>

@@ -20,14 +20,18 @@
             
             var items = $tocTag.find("li");
             $.map(items, function(el){
-                $(el).prepend('<i class="mdi mdi-bookmark-outline mdi-18px"></i>');
-                $(el).find('a').addClass("mdl-button mdl-js-button mdl-button--accent");
+                var $link = $(el).children('a'),
+                    text = $link.text();
+                    
+                $link.prepend('<i class="mdi mdi-bookmark-outline mdi-18px"></i>')
+                     //.addClass("mdl-button mdl-js-button mdl-button--accent")
+                     .attr('title', text);
             });
         }
         
         if($.isFunction($.fn.ghostRelated)){
             $('.related-posts').ghostRelated({
-                template: '<li><a href="{url}" class="mdl-button mdl-js-button mdl-button--accent"><i class="mdi mdi-heart-outline"></i>  {title}</a></li>'
+                template: '<li><a href="{url}" title="{title}"><i class="mdi mdi-heart-outline"></i> {title}</a></li>'
             });    
         }
         
