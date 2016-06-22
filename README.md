@@ -28,6 +28,7 @@ Download the latest release and install it as you install all other themes.
 ## Docker Notes
 
 Connect to container command line: docker exec -it dev-ghost /bin/bash
+    Linux remove files: rm -rf *
 
 Ghost Container Theme Path: /usr/src/ghost/content/themes/devlaundry
 

@@ -20,6 +20,9 @@
     </style>
     
     <!-- inject:css -->    
+    <link rel="stylesheet" href="/assets/css/materialdesignicons.min.css">    
+    <link rel="stylesheet" href="/assets/css/prism.css">    
+    <link rel="stylesheet" href="/assets/css/devlaundry.css">    
     <!-- endinject -->
     
     {{! Ghost outputs important style and meta data with this tag }}
@@ -90,7 +93,7 @@
     <!-- Load Css -->
     <script type="text/javascript">
         var cb = function() {
-        var l = document.createElement('link'); l.rel = 'stylesheet'; l.href = '//storage.googleapis.com/code.getmdl.io/1.1.2/material.blue-red.min.css';
+        var l = document.createElement('link'); l.rel = 'stylesheet'; l.href = '//storage.googleapis.com/code.getmdl.io/1.1.3/material.blue-red.min.css';
         var h = document.getElementsByTagName('head')[0]; h.parentNode.insertBefore(l, h);
         
         var l2 = document.createElement('link'); l2.rel = 'stylesheet'; l2.href = '//fonts.googleapis.com/icon?family=Material+Icons';
@@ -110,15 +113,21 @@
     </script>
 
     {{!-- jQuery needs to come before `{{ghost_foot}}` so that jQuery can be used in code injection --}}
-    <script type="text/javascript" src="//code.jquery.com/jquery-2.2.1.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-3.0.0.min.js"></script>
     {{! Ghost outputs important scripts and data with this tag }}
     {{ghost_foot}}
     
-    <script src="//storage.googleapis.com/code.getmdl.io/1.1.2/material.min.js" async></script>        
+    <script src="//storage.googleapis.com/code.getmdl.io/1.1.3/material.min.js" async></script>        
     <script type="text/javascript" src="//cdn.muut.com/1/moot.min.js" async></script>
     
     <!-- inject:js -->
-    <script src="/assets/dist/all.min.js"></script>
+    <script src="/assets/js/prism.js"></script>
+    <script src="/assets/js/jquery.fitvids.js"></script>
+    <script src="/assets/js/jquery.ghostHunter.js"></script>
+    <script src="/assets/js/jquery.ghostrelated.js"></script>
+    <script src="/assets/js/jquery.toc.js"></script>
+    <script src="/assets/js/readingTime.min.js"></script>
+    <script src="/assets/js/index.js"></script>
     <!-- endinject -->
 
 </body>
