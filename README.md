@@ -25,6 +25,14 @@ Download the latest release and install it as you install all other themes.
 * gulp prod
     * Compress and combine JS and CSS files. Injects combined files in  default.hbs file.
 
+## Docker Notes
+
+Connect to container command line: docker exec -it dev-ghost /bin/bash
+
+Ghost Container Theme Path: /usr/src/ghost/content/themes/devlaundry
+
+Copy files from localhost to container: docker cp . dev-ghost:/usr/src/ghost/content/themes/devlaundry-mdl
+
 
 ## Contributing
 
