@@ -1,0 +1,44 @@
+<article class="article-card-wide mdl-card mdl-shadow--4dp">
+    <div class="mdl-card__title">    
+        <h2 class="mdl-card__title-text">
+            <a href="{{url}}">{{{title}}}</a>        
+        </h2>    
+    </div>
+    <div class="mdl-card__supporting-text">
+        {{excerpt words="26"}}&hellip;
+        <span class="publish-date">Published {{date published_at timeago="true"}}</span>
+    </div>
+    <div class="mdl-card__actions mdl-card--border">
+        <a href="{{url}}" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" title="Read the article now.">
+        Read Now <i class="mdi mdi-arrow-right mdi-12px"></i>
+        </a>
+        <div class="share-buttons">
+            <button id="{{slug}}-share-menu" class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect" title="Share article.">
+                <i class="mdi mdi-share-variant"></i>
+            </button>
+            <ul class="mdl-menu mdl-menu--top-right mdl-js-menu mdl-js-ripple-effect"
+                for="{{slug}}-share-menu">
+                <li class="mdl-menu__item">
+                    <a href="https://twitter.com/intent/tweet?text=Read this: {{encode title}}&url={{url absolute="true"}}" 
+                    onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;" title="Share on Twitter.">Twitter</a>
+                </li>
+                <li class="mdl-menu__item">
+                    <a href="https://www.linkedin.com/shareArticle?mini=true&title={{encode title}}&url={{url absolute="true"}}" 
+                    onclick="window.open(this.href, 'linkedin-share', 'width=490,height=530');return false;" title="Share on LinkedIn.">Linkedin</a>
+                </li>
+                <li class="mdl-menu__item">
+                    <a href="https://www.facebook.com/share.php?u={{url absolute="true"}}" 
+                    onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;" title="Share on Facebook.">Facebook</a>
+                </li>
+                <li class="mdl-menu__item">
+                    <a href="https://reddit.com/submit?url={{url absolute="true"}}&title={{encode title}}" 
+                    onclick="window.open(this.href, 'reddit-share', 'width=490,height=530');return false;" title="Share on Reddit.">Reddit</a>
+                </li>
+                <li class="mdl-menu__item">
+                    <a href="https://plus.google.com/share?url={{url absolute="true"}}" 
+                    onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;" title="Share on Google+.">Google+</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</article>

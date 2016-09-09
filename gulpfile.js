@@ -5,7 +5,7 @@ var gulp = require('gulp'),
     concat = require('gulp-concat'),
     inject = require('gulp-inject');
   
- var jsFiles = ['assets/js/prism.js', 'assets/js/jquery.fitvids.js', 'assets/js/jquery.ghostHunter.js',
+ var jsFiles = ['assets/js/prism.js', 'assets/js/jquery.fitvids.js',
                 'assets/js/jquery.ghostrelated.js', 'assets/js/jquery.toc.js',
                 'assets/js/readingTime.min.js', 'assets/js/index.js'];
                 

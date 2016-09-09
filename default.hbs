@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     {{! Document Settings }}
     <meta charset="utf-8" />
@@ -33,24 +33,16 @@
             mdl-layout--fixed-header">
         <header class="mdl-layout__header">
             <div class="mdl-layout__header-row">
-            <a href="/" class="mdl-button mdl-js-button mdl-button--icon">
+            <a href="/" class="mdl-button mdl-js-button mdl-button--icon" title="View home page.">
                 <i class="mdi mdi-home mdi-24px mdi-light"></i>
             </a>
             <div class="mdl-layout-spacer"></div>
-            <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable
-                        mdl-textfield--floating-label mdl-textfield--align-right search-right-align">
-                <label class="mdl-button mdl-js-button mdl-button--icon"
-                    for="fixed-header-drawer-exp" title="Search for articles.">
-                <i class="mdi mdi-magnify"></i>
-                </label>
-                <div class="mdl-textfield__expandable-holder">
-                <input class="mdl-textfield__input" type="text" name="search"
-                        id="fixed-header-drawer-exp">
-                <button id="clearSearch" class="mdl-button mdl-js-button mdl-button--icon" title="Clear search results.">
-                    <i class="mdi mdi-close"></i>
-                </button>
+            <form action="#">
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                    <input class="mdl-textfield__input" type="text" id="search">
+                    <label class="mdl-textfield__label" for="search" id="searchLabel">Search here for...</label>
                 </div>
-            </div>
+            </form>
             </div>
         </header>
         <div class="mdl-layout__drawer">                        
@@ -60,13 +52,13 @@
                
             <section style="margin-left:40px;">
                 <h6>Follow Me</h6>
-                <a href="https://twitter.com/cecildt" target="_blank" class="mdl-button mdl-js-button mdl-button--icon">
+                <a href="https://twitter.com/cecildt" target="_blank" class="mdl-button mdl-js-button mdl-button--icon" title="My profile on Twitter.">
                     <i class="mdi mdi-twitter-box"></i>
                 </a>
-                <a href="https://github.com/Cecildt" target="_blank" class="mdl-button mdl-js-button mdl-button--icon">
+                <a href="https://github.com/Cecildt" target="_blank" class="mdl-button mdl-js-button mdl-button--icon" title="My profile on GitHub.">
                     <i class="mdi mdi-github-box"></i>
                 </a>
-                <a href="https://www.linkedin.com/in/cecildutoit" target="_blank" class="mdl-button mdl-js-button mdl-button--icon">
+                <a href="https://www.linkedin.com/in/cecildutoit" target="_blank" class="mdl-button mdl-js-button mdl-button--icon" title="My profile on LinkedIn.">
                     <i class="mdi mdi-linkedin-box"></i>
                 </a>
             </section>                      
@@ -113,7 +105,7 @@
     </script>
 
     {{!-- jQuery needs to come before `{{ghost_foot}}` so that jQuery can be used in code injection --}}
-    <script type="text/javascript" src="//code.jquery.com/jquery-3.0.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-3.1.0.min.js"></script>
     {{! Ghost outputs important scripts and data with this tag }}
     {{ghost_foot}}
     

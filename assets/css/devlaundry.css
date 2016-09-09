@@ -105,21 +105,8 @@ div.mdl-card__title h4 span{
     text-decoration: none;
 }
 
-.search-card.mdl-card {  
-  width: 250px;
-  margin-right: 10px;
-  margin-bottom: 15px;
-  overflow: visible;
-  float: left;
-}
-.search-card > .mdl-card__title {
-  color: #fff;
-}
-.search-card > .mdl-card__menu {
-  color: #fff;
-}
-.search-card a{
-    text-decoration: none;
+.search-card{
+    margin: 5px;
 }
 
 .sidebar-title{
@@ -225,16 +212,11 @@ ul.related-posts a {
 #results a{
     text-decoration: none;
 }
-#clearSearch{
-    bottom: 0;
+#search{
+    border-bottom-color: #fff;
 }
-.search-right-align{
-    margin-right: 30px;
-}
-.feature-header{
-    background-color:#1976D2; 
-    margin:0;
-    text-align: center;
+#searchLabel{
+    color: #fff;
 }
 .image-div > img {
     max-width: 100%;

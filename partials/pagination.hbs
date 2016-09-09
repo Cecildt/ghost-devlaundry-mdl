@@ -1,12 +1,12 @@
 <nav class="pagination" role="navigation">
     {{#if prev}}
-        <a class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored" href="{{page_url prev}}">
+        <a class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored" href="{{page_url prev}}" title="View previous articles.">
             <i class="mdi mdi-arrow-left mdi-36px icon-fab-align"></i>
         </a>
     {{/if}}
     <span class="page-number">Page {{page}} of {{pages}}</span>
     {{#if next}}
-        <a class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored"" href="{{page_url next}}">
+        <a class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored"" href="{{page_url next}}" title="View next articles.">
             <i class="mdi mdi-arrow-right mdi-36px icon-fab-align"></i>
         </a>
     {{/if}}

@@ -97,88 +97,12 @@
         <aside class="read-next">
             {{#next_post}}
             <a class="read-next-story" href="{{url}}">
-                <article class="article-next-card mdl-card mdl-shadow--4dp">
-                    <div class="mdl-card__title">    
-                        <h2 class="mdl-card__title-text">
-                            <a href="{{url}}">{{{title}}}</a>        
-                        </h2>    
-                    </div>
-                    <div class="mdl-card__supporting-text">
-                        {{excerpt words="26"}}&hellip;
-                        <span class="publish-date">Published {{date published_at timeago="true"}}</span>
-                    </div>
-                    <div class="mdl-card__actions mdl-card--border">
-                        <a href="{{url}}" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-                        Read Now <i class="mdi mdi-arrow-right mdi-12px"></i>
-                        </a>
-                        <div class="share-buttons">
-                            <button id="{{slug}}-share-menu" class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect" title="Share">
-                                <i class="mdi mdi-share-variant"></i>
-                            </button>
-                            <ul class="mdl-menu mdl-menu--top-right mdl-js-menu mdl-js-ripple-effect"
-                                for="{{slug}}-share-menu">
-                                <li class="mdl-menu__item">
-                                    <a href="https://twitter.com/intent/tweet?text=Read this: {{encode title}}&url={{url absolute="true"}}" target="_blank">Twitter</a>
-                                </li>
-                                <li class="mdl-menu__item">
-                                    <a href="https://www.linkedin.com/shareArticle?mini=true&title={{encode title}}&url={{url absolute="true"}}" target="_blank">Linkedin</a>
-                                </li>
-                                <li class="mdl-menu__item">
-                                    <a href="https://www.facebook.com/share.php?u={{url absolute="true"}}" target="_blank">Facebook</a>
-                                </li>
-                                <li class="mdl-menu__item">
-                                    <a href="https://reddit.com/submit?url={{url absolute="true"}}&title={{encode title}}" target="_blank">Reddit</a>
-                                </li>
-                                <li class="mdl-menu__item">
-                                    <a href="https://plus.google.com/share?url={{url absolute="true"}}" target="_blank">Google+</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </article>
+                {{> article-card}}
             </a>
             {{/next_post}}
             {{#prev_post}}
             <a class="read-next-story prev" href="{{url}}">
-                <article class="article-next-card mdl-card mdl-shadow--4dp">
-                    <div class="mdl-card__title">    
-                        <h2 class="mdl-card__title-text">
-                            <a href="{{url}}">{{{title}}}</a>        
-                        </h2>    
-                    </div>
-                    <div class="mdl-card__supporting-text">
-                        {{excerpt words="26"}}&hellip;
-                        <span class="publish-date">Published {{date published_at timeago="true"}}</span>
-                    </div>
-                    <div class="mdl-card__actions mdl-card--border">
-                        <a href="{{url}}" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-                        Read Now <i class="mdi mdi-arrow-right mdi-12px"></i>
-                        </a>
-                        <div class="share-buttons">
-                            <button id="{{slug}}-share-menu" class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect" title="Share">
-                                <i class="mdi mdi-share-variant"></i>
-                            </button>
-                            <ul class="mdl-menu mdl-menu--top-right mdl-js-menu mdl-js-ripple-effect"
-                                for="{{slug}}-share-menu">
-                                <li class="mdl-menu__item">
-                                    <a href="https://twitter.com/intent/tweet?text=Read this: {{encode title}}&url={{url absolute="true"}}" target="_blank">Twitter</a>
-                                </li>
-                                <li class="mdl-menu__item">
-                                    <a href="https://www.linkedin.com/shareArticle?mini=true&title={{encode title}}&url={{url absolute="true"}}" target="_blank">Linkedin</a>
-                                </li>
-                                <li class="mdl-menu__item">
-                                    <a href="https://www.facebook.com/share.php?u={{url absolute="true"}}" target="_blank">Facebook</a>
-                                </li>
-                                <li class="mdl-menu__item">
-                                    <a href="https://reddit.com/submit?url={{url absolute="true"}}&title={{encode title}}" target="_blank">Reddit</a>
-                                </li>
-                                <li class="mdl-menu__item">
-                                    <a href="https://plus.google.com/share?url={{url absolute="true"}}" target="_blank">Google+</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </article>
+                {{> article-card}}
             </a>
             {{/prev_post}}
         </aside>
