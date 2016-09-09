@@ -32,7 +32,9 @@ Download the latest release and install it as you install all other themes.
 1. Run gulp prod
 2. Run uncss
 3. Update default.hbs with output of uncss.
-4. Inject CDN references.
+4. Update assets references: 
+    <link rel="stylesheet" href="{{asset "/dist/all.min.css"}}"> 
+    <script src="{{asset "/dist/all.min.js"}}"></script>
 5. Upload JS and CSS file to CDN.
 6. Remove node_modules folder
 7. Zip project folder.
