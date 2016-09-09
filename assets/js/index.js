@@ -2,9 +2,7 @@
 (function ($) {
   'use strict'
 
-  var $document = $(document)
-
-  $document.ready(function () {
+  $(function () {
     var $postContent = $('.post-content')
     $postContent.fitVids()
 

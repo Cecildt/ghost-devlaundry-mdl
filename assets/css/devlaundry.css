@@ -17,7 +17,9 @@ h4{
     clear: both;
 }
 .page-content{
-    margin: 15px;    
+    margin: 15px;
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);    
 }
 .share-buttons{
     float: right;
